@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NavModule } from './nav/nav.module';
+
 import { BaseComponent } from './base/base.component';
 
 
@@ -9,7 +11,9 @@ import { BaseComponent } from './base/base.component';
     BaseComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+
+    NavModule
   ],
   providers: [],
   bootstrap: [

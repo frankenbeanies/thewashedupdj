@@ -1,0 +1,9 @@
+.dj-brand{
+    color: #eee !important;
+    font-family: 'Oleo Script', cursive;
+    font-size: 30px;
+}
+
+.dj-brand a:visited{
+    color: #eee !important;
+}
