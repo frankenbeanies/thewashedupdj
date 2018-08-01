@@ -1,5 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+
+import { MockModule } from 'ng-mocks';
 
 import { NavModule } from '../nav/nav.module';
 
@@ -15,7 +18,9 @@ describe('BaseComponent', () => {
                 BaseComponent
             ],
             imports: [
-                NavModule
+                MockModule(RouterModule),
+
+                MockModule(NavModule)
             ]
         }).compileComponents();
     }));
